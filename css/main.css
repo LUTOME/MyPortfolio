@@ -1,0 +1,137 @@
+:root {
+  --color-blue-medium: #8fe2e4;
+  --color-purple: #632ce7;
+  --color-gray: #ccc;
+  --color-gray-medium: #f8f9fa;
+  --color-yellow: #fac32c;
+  --color-black: #000000;
+}
+
+/*-------------*/
+
+/*General styles */
+
+.nav-link {
+  color: inherit;
+}
+
+.container > .row {
+  margin-bottom: 3rem;
+}
+
+/*-------------*/
+
+/* Nav */
+.navbar-brand > img {
+  width: 55px;
+}
+
+.navbar-main .active {
+  text-decoration: underline dotted var(--color-purple);
+  text-underline-offset: 6px;
+}
+
+/*-------------*/
+
+/* Header */
+
+.icons-social-networks > a > img {
+  width: 40px;
+  height: 40px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icons-social-networks > a:hover {
+  filter: opacity(0.7);
+  transition: 0.3s filter;
+}
+
+.img-profile-container {
+  width: 300px;
+  height: 320px;
+ 
+}
+
+.profileImg {
+  width: 300px;
+  height: 320px;
+  
+}
+
+.header-main {
+  min-height: 100vh;
+ margin-top: -150px;
+}
+
+.vid{
+  opacity: 90%;
+  width:90vw; 
+  height:100vh;
+}
+
+.vid-contain{
+  text-align: center;
+}
+
+
+/*-----*/
+/*services*/
+
+.icon-service {
+  --box-size: 70px;
+  width: var(--box-size);
+  height: var(--box-size);
+  padding: 10px;
+}
+
+.profileDescription {
+  text-align: center;
+}
+
+.profileDescription-p > span {
+  color: var(--color-purple);
+  font-weight: 500;
+}
+
+#AboutMe{
+  padding-top: 80px;
+}
+
+
+.portfolio-item > img{
+  transition: 0.4s transform;
+}
+
+
+.portfolio-item:hover > img{
+transform: scale(0.96);
+}
+
+
+/*-----*/
+/*clients*/
+.bg-purple{
+  background: rgba(131 87 235 / 0.3);
+  filter: opacity(0.55);
+}
+
+.sec-clients > a:hover{
+  filter: opacity(0.7);
+  transition: 0.3s filter;
+}
+
+
+@media screen and (max-width: 376px){
+  .header-main {
+   min-height: initial;
+  }
+  h1{
+    margin-top: -100px;
+  }
+  .vid {
+    margin-bottom: -80px;
+    margin-top: -300px;
+  }
+}
